@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f1f8f4;
+}
+
+
+/* Navigation Bar */
+
+header {
+    background-color: #14532d;
+    padding: 15px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav h1 {
+    color: white;
+    font-size: 28px;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+nav ul li a:hover {
+    color: #bbf7d0;
+}
+
+
+/* Hero Section */
+
+.hero {
+    height: 550px;
+
+    background:
+    linear-gradient(
+        rgba(0, 70, 40, 0.65),
+        rgba(0, 70, 40, 0.65)
+    ),
+
+    url("https://images.unsplash.com/photo-1532996122724-e3c354a0b15b")
+    center/cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+
+.hero-content {
+    max-width: 750px;
+    padding: 20px;
+}
+
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+.btn {
+    background-color: #22c55e;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+
+.btn:hover {
+    background-color: #15803d;
+}
+
+
+/* General Sections */
+
+.section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+
+.section h2 {
+    color: #166534;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+
+.section > p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+}
+
+
+/* Facts */
+
+.facts {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+
+.fact-box {
+    background-color: white;
+    padding: 25px;
+    width: 280px;
+    border-radius: 15px;
+
+    box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.fact-box h3 {
+    color: #15803d;
+    margin-bottom: 10px;
+}
+
+
+/* Types of Pollution */
+
+.types-section {
+    background-color: #dcfce7;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    background-color: white;
+    width: 260px;
+    padding: 30px;
+    border-radius: 15px;
+
+    box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+
+.icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+
+.card h3 {
+    color: #166534;
+    margin-bottom: 10px;
+}
+
+
+/* Effects */
+
+.effects {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+
+.effects div {
+    background-color: white;
+    padding: 25px;
+    width: 280px;
+    border-radius: 10px;
+
+    box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.effects h3 {
+    color: #15803d;
+    margin-bottom: 10px;
+}
+
+
+/* Solutions */
+
+.solutions-section {
+    background-color: #ecfdf5;
+}
+
+
+.solutions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 900px;
+    margin: 40px auto 0;
+}
+
+
+.solutions div {
+    background-color: white;
+    padding: 25px;
+    border-left: 6px solid #22c55e;
+    text-align: left;
+    border-radius: 10px;
+}
+
+
+.solutions h3 {
+    color: #15803d;
+    margin-bottom: 8px;
+}
+
+
+/* Take Action */
+
+.action {
+    background-color: #166534;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+
+.action h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+
+.action p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
+.action button {
+    background-color: #bbf7d0;
+    color: #14532d;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.action button:hover {
+    background-color: white;
+}
+
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #052e16;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Mobile Responsive Design */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+
+    .hero h2 {
+        font-size: 35px;
+    }
+
+
+    .solutions {
+        grid-template-columns: 1fr;
+    }
+
+}
